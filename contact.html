@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome for Icons -->
+    <title>TAPS - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+        .contact-section {
+            padding: 4rem 8%;
+            background: #fff;
+        }
+
+        .contact-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+        }
+
+        .contact-info h2 {
+            font-size: 1.8rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .info-item h3 {
+            font-size: 1rem;
+            color: #1e3a5f;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-item p {
+            color: #666;
+            font-size: 0.9rem;
+            margin: 0.25rem 0;
+        }
+
+        .info-item a {
+            color: #1e3a5f;
+            text-decoration: none;
+        }
+
+        .info-item a:hover {
+            color: #c9a961;
+        }
+
+        .contact-form h2 {
+            font-size: 1.8rem;
+            color: #1e3a5f;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #c9a961;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .submit-btn {
+            background: #1e3a5f;
+            color: #fff;
+            padding: 0.9rem 2.5rem;
+            border: none;
+            border-radius: 3px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #0f2537;
+        }
+
+        .map-section {
+            padding: 0;
+            background: #f9f9f9;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            background: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            padding: 2rem 8%;
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 968px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="tap-logo-black.png"  alt="TAPS Logo"  class="logo-img" >        
+            </a>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="contact-btn">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Get In Touch</h1>
+        <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+
+                <div class="info-item">
+                    <h3>📍 Address</h3>
+                    <p>123 Coaching Avenue</p>
+                    <p>Mumbai, Maharashtra 400001</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:connect@TAPSpeople.com">connect@TAPSpeople.com</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:+9196077 80919">+91 96077 80919</a></p>
+                    <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                </div>
+
+                <div class="info-item">
+                    <h3>🕒 Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="interest">Service Interest *</label>
+                        <select id="interest" required>
+                            <option value="">Select a service</option>
+                            <option value="life-coaching">Life Coaching</option>
+                            <option value="1-on-1">1 on 1 Need Help</option>
+                            <option value="habit">Habit and Mind Body</option>
+                            <option value="corporate">Corporate Workshop</option>
+                            <option value="speaker">Public Speaking</option>
+                            <option value="campus">Campus Workshop</option>
+			                <option value="Other">Any Other Request</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" required placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995000001!3d19.082502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section footer-about">
+            <div class="footer-logo">
+                <a href="index.html">
+                <img src="tabs-logo.png" 
+                     alt="TAPS Logo" 
+                     class="footer-logo-img"
+                     width="" 
+                     onload="console.log('Footer logo loaded successfully')"
+                     onerror="console.log('Footer logo failed to load'); this.style.display='none';">
+                <!-- <h3>TAPS</h3> -->
+                 </a>
+            </div>
+            <p>We don’t “transform your life.” That’s too polite. We flip it, remix it, and hand you the mic.</p>
+            <div class="social-links">
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                
+            </div>
+        </div>
+        
+        <div class="footer-section footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="#blog">Blog</a></li> -->
+            </ul>
+        </div>
+        
+<!--         <div class="footer-section footer-services">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="services.html">Life Coaching</a></li>
+                <li><a href="services.html">Consulting</a></li>
+                <li><a href="services.html">Training</a></li>
+                <li><a href="services.html">Speaking</a></li>
+                <li><a href="services.html">Workshops</a></li>
+            </ul>
+        </div> -->
+        
+        <div class="footer-section footer-contact">
+            <h4>Get in Touch</h4>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India</li>
+                <li><i class="fas fa-phone"></i> +91 96077 80919</li>
+                <li><i class="fas fa-envelope"></i> connect@TAPSpeople.com.com</li>
+                <li><i class="fas fa-clock"></i> Mon - Sat: 9AM - 6PM</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom" style="text-align: center;">
+        <p>&copy; 2025 TAPS People Coaching. All Rights Reserved.</p>
+<!--         <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms of Service</a>
+            <span>|</span>
+            <a href="#">Sitemap</a>
+        </div> -->
+    </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        $(document).ready(function() {
+
+            // CONTACT PAGE FORM
+            $("#contactForm").on("submit", function(e) {
+                e.preventDefault();
+
+                // Collect all field values
+                var formData = {
+                name: $("#firstName").val() + " " + $("#lastName").val(),
+                email: $("#email").val(),
+                phone: $("#phone").val(),
+                interest: $("#interest").val(),
+                message: $("#message").val()
+                };
+
+                console.log("Sending data:", formData);
+
+                $.ajax({
+                url: "sendmail.php", // same PHP file
+                type: "POST",
+                data: formData,
+                success: function(response) {
+                    alert(response); // show message
+                    $("#contactForm")[0].reset();
+                },
+                error: function() {
+                    alert("Error sending message. Please try again later.");
+                }
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
